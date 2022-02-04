@@ -1,0 +1,94 @@
+<html>
+<title>TUGAS 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<body>
+    <img src="atas.jpg" height="270" width="100%">
+
+    <div class="w3-bar w3-black">
+		<button class="w3-bar-item w3-button" onclick="openMenu('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Mobil')">Mobil</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('UnikomMart')">UnikomMart</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Kampus')">Kampus</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Foto')">Foto</button>
+		<button class="w3-bar-item w3-button" onclick="openMenu('Profile')">Profile</button>
+    </div>
+    <div id="Home" class="w3-container kota w3-yellow">
+		<br>
+		<div class="w3-container w3-black">
+        <h2>
+            <center>Selamat Datang</center>
+        </h2>
+		</div>
+        <hr>
+        <div class="w3-container">
+            <center>Silahkan untuk memilih menu diatas
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+				<p>Dibuat oleh :</p>
+                <p>Rizqi Zakaria</p>
+                <p>10121046</p>
+            </center>
+		</div>	
+    </div>
+
+    <div id="Mobil" class="w3-container kota" style="display:none">
+        <h2>Mobil</h2>
+        <div class=w3-animate-fading>
+            <img src="mobil.jpg" width="500" height="300"></p>
+        </div>
+    </div>
+    <div id="UnikomMart" class="w3-container kota" style="display:none">
+        <h2>Unikom Mart</h2>
+        <div class=w3-animate-bottom>
+            <img src="minum.jpg" width="500" height="300"></p>
+        </div>
+    </div>
+    <div id="Kampus" class="w3-container kota" style="display:none">
+        <h2>Kampus</h2>
+        <div class=w3-animate-top>
+            <img src="gedung.jpg" width="500" height="300"></p>
+        </div>
+    </div>
+    <div id="Foto" class="w3-container kota" style="display:none">
+        <h2>Cha Eun Woo</h2>
+        <div class=w3-animate-zoom>
+            <img src="cew.jpg" width="500" height="300"></p>
+        </div>
+    </div>
+	<div id="Profile" class="w3-container kota" style="display:none">
+		<br>
+		<div class="w3-container">
+		 <div class="w3-card-4">
+		  <div class="w3-container w3-yellow">
+			<h2>Profile</h2>
+		  </div>
+		   <div class="w3-container w3-black">
+		    <p>NIM : 10121046</p>
+		   </div>
+		   <div class="w3-container w3-yellow">
+		    <p>Nama : Rizqi Zakaria</p>
+		   </div>
+		   <div class="w3-container w3-black">
+		    <p>Kelas : IF-2</p>
+		   </div>
+		  </div>
+		</div>
+	</div>
+    <script>
+        function openMenu(namaMenu) {
+            var i;
+            var x = document.getElementsByClassName("kota");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namaMenu).style.display = "block";
+        }
+    </script>
+</body>
+</html>
