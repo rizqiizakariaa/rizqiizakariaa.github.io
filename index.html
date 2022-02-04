@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <img src="atas.jpg" height="270" width="100%">
+    <img src="atas.jpg" height="45%" width="100%">
 
     <div class="w3-bar w3-black">
 		<button class="w3-bar-item w3-button" onclick="openMenu('Home')">Home</button>
@@ -32,7 +32,7 @@
         <button class="w3-bar-item w3-button" onclick="openMenu('Foto')">Foto</button>
 		<button class="w3-bar-item w3-button" onclick="openMenu('Profile')">Profile</button>
     </div>
-    <div id="Home" class="w3-container kota w3-yellow">
+    <div id="Home" class="w3-container menu w3-yellow">
 		<br>
 		<div class="w3-container w3-black">
         <h2>
@@ -55,31 +55,31 @@
 		</div>	
     </div>
 
-    <div id="Mobil" class="w3-container kota" style="display:none">
+    <div id="Mobil" class="w3-container menu" style="display:none">
         <h2>Mobil</h2>
         <div class="imgbox w3-animate-fading">
             <img class="center-fit" src="mobil.jpg"></p>
         </div>
     </div>
-    <div id="UnikomMart" class="w3-container kota" style="display:none">
+    <div id="UnikomMart" class="w3-container menu" style="display:none">
         <h2>Unikom Mart</h2>
         <div class="imgbox w3-animate-bottom">
             <img class="center-fit" src="minum.jpg"></p>
         </div>
     </div>
-    <div id="Kampus" class="w3-container kota" style="display:none">
+    <div id="Kampus" class="w3-container menu" style="display:none">
         <h2>Kampus</h2>
         <div class="imgbox w3-animate-top">
             <img class="center-fit" src="gedung.jpg"></p>
         </div>
     </div>
-    <div id="Foto" class="w3-container kota" style="display:none">
+    <div id="Foto" class="w3-container menu" style="display:none">
         <h2>Cha Eun Woo</h2>
         <div class="imgbox w3-animate-zoom">
             <img class="center-fit" src="cew.jpg"></p>
         </div>
     </div>
-	<div id="Profile" class="w3-container kota" style="display:none">
+	<div id="Profile" class="w3-container menu" style="display:none">
 		<br>
 		<div class="w3-container">
 		 <div class="w3-card-4">
@@ -101,7 +101,7 @@
     <script>
         function openMenu(namaMenu) {
             var i;
-            var x = document.getElementsByClassName("kota");
+            var x = document.getElementsByClassName("menu");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
